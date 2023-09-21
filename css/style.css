@@ -1,0 +1,279 @@
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  width: 100%;
+  height:600px;
+  display: grid;
+  gap:200px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding-top:35px;
+  justify-content: center;
+  align-items: center;
+}
+
+.greeting-message{
+  display: grid;
+  gap:1px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width:60%;
+  height:150px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: left;
+  background-color: transparent;
+  margin-left:300px
+}
+
+.dog-pic{
+  background-image: url("../images/iphone.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height:100%;
+  width:340px;
+}
+
+.message {
+  grid-column: span 3;
+  height: fit-content;
+}
+
+.download-btn{
+  background-color: transparent;
+  grid-column: span 1;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  height: 100px;
+  border-radius: 50%;
+}
+
+.features{
+  background-color: white;
+  width:100%;
+  height:300px;
+  margin-top:35px;
+  display:flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap:40px;
+}
+.testimonial{
+  background-color: white;
+  width:100%;
+  height:450px;
+  margin-top:35px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap:10px;
+}
+
+.features-items{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  padding-bottom:25px;
+}
+
+.features-heading{
+  display: flex;
+  gap:5px;
+}
+/*.features-icon-background{
+  width:60px;
+  height: 50px;
+  background-color: aliceblue;
+  text-align: center;
+  align-items: center;
+
+}*/
+
+.features-icon-background svg{
+  width:40px;
+  height:40px;
+  background-color: aliceblue;
+  border: 5px solid aliceblue;
+  border-radius: 15px;
+}
+
+.testimonial-dog{
+  background-image: url("../images/dog-img.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height:100px;
+  width:100px;
+  border-radius: 70px;
+  margin-top:25px;
+  padding-bottom:25px;
+}
+
+.testimonial-logo-line{
+  margin-top:35px;
+  display: flex;
+  gap:60px;
+  height:30px;
+  width:100%;
+}
+
+#tech-crunch{
+  background-image: url("../images/techcrunch.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height:30px;
+  width:25%;
+}
+#mashable{
+  background-image: url("../images/mashable.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height:30px;
+  width:25%;
+}
+#b-insider{
+  background-image: url("../images/bizinsider.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height:30px;
+  width:25%;
+}
+#tnw{
+  background-image: url("../images/tnw.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height:30px;
+  width:25%;
+}
+.pricing{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width:100%;
+  height:700px;
+
+}
+.pricing-cards{
+  display: flex;
+  width:100%;
+  height:500px;
+  gap:40px;
+
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+#green{
+  width: 300px;
+  height: 400px;
+  background-color: green;
+}
+#blue{
+  width: 300px;
+  height: 400px;
+  background-color: blue;
+}
+#pink{
+  width: 300px;
+  height: 400px;
+  background-color: pink;
+}
+
+/*.card{*/
+/*  height:300px;*/
+/*  width:20%;*/
+/*}*/
+
+/*.btn-dark*/
+/*{*/
+/*  width:100%;*/
+/*}*/
+/*#black-card-header{*/
+/*  background-color: black;*/
+/*  color: white;*/
+/*}*/
+/*.card-header{*/
+/*  text-align: center;*/
+/*}*/
+
+/*.card-body a{*/
+/*  width: 100%;*/
+/*  margin-top: 15px;*/
+/*}*/
+/*.card-body p{*/
+/*  text-align: center;*/
+/*  margin:1px;*/
+/*}*/
+
+.card{
+  height:300px;
+  width:400px;
+  text-align: center;
+}
+
+.footer{
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  width: 100%;
+  height:300px;
+  display: grid;
+  grid-template-columns: 1.5fr repeat(4,1fr);
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+li{
+  list-style: none;
+  text-align: center;
+}
+
+.section{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.header{
+  width: 100%;
+  height:fit-content;
+
+}
+
+.navbar{
+
+}
